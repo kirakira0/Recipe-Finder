@@ -12,18 +12,26 @@ body {
     align-items: center; 
 }
 
+#pancakes {
+    max-width: 500px; 
+    max-height: auto; 
+}
+
 #main {
+    /*
     background-image: url('../images/dinner.jpeg'); 
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: fixed; 
     margin: 0px;  
     padding: 0px;  
+    */ 
 }
 
 #home {
-    background-image: url('../images/pancakes.jpeg'); 
     /*
+    background-image: url('../images/pancakes.jpeg'); 
+    
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: fixed; 
