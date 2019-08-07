@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Here are some recipies we found:</h1>
+        <div id="back"><p><a href="/">Search Again</a></p></div>   
+        {% for result in results.results %}
+            <section>
+                <div class="image"><img src="{{result.thumbnail}}"></div> 
+                <div class="title">{{result.title}}</div>
+                <div class="ingredients">Ingredients: {{result.ingredients}}</div>
+                <div class="link">Recipe: {{result.href}}</div>
+            </section>
+        {% endfor %}     
+    </div>
+</body>
+</html>

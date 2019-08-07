@@ -1,0 +1,73 @@
+body {
+    font-family: 'Impact', 'Times New Roman'; 
+    background-color: lavender;  
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    color: black;
+    /*text-shadow: 2px 2px white; */
+
+    display: flex; 
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center; 
+}
+
+#main {
+    background-image: url('../images/dinner.jpeg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: fixed; 
+    margin: 0px;  
+    padding: 0px;  
+}
+
+#home {
+    background-image: url('../images/pancakes.jpeg'); 
+    /*
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: fixed; 
+    margin: 0px;  
+    padding: 0px; 
+    */ 
+}
+
+h1 {
+    text-align: center; 
+}
+
+#back {
+    text-align: center; 
+}
+
+section {
+    display: grid; 
+    grid-template-columns: 130px auto; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    
+    background-color: snow; 
+    margin: 20px;  
+    padding: 20px; 
+
+    border-radius: 20px; 
+}
+
+.image {
+    grid-column: 1;
+    grid-row: 1 / span 3; 
+}
+
+.title {
+    grid-column: 2; 
+    grid-row: 1; 
+}
+
+.ingredients {
+    grid-column: 2; 
+    grid-row: 2;
+}
+
+.link {
+    grid-column: 2; 
+    grid-row: 3;
+}

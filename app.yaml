@@ -1,0 +1,18 @@
+#app.yaml
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /js 
+  static_dir: js
+- url: /images
+  static_dir: images
+- url: /styles
+  static_dir: styles
+- url: /.*
+  script: main.app    #when you get any requests, serve it from main.app
+
+libraries: 
+- name: jinja2
+  version: latest
