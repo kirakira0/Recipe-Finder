@@ -14,10 +14,13 @@ body {
 
 #pancakes {
     max-width: 500px; 
-    max-height: auto; 
+    max-height: auto;
+    border-radius: 20px;  
 }
 
 #main {
+    opacity: 0; 
+    transition: opacity 3s;  
     /*
     background-image: url('../images/dinner.jpeg'); 
     background-repeat: no-repeat; 
@@ -29,23 +32,29 @@ body {
 }
 
 #home {
-    /*
-    background-image: url('../images/pancakes.jpeg'); 
-    
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: fixed; 
-    margin: 0px;  
-    padding: 0px; 
-    */ 
+    display: flex; 
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center; 
 }
 
 h1 {
     text-align: center; 
+    margin: 5px; 
+}
+
+h3 {
+    margin: 5px; 
+    text-align: center; 
+    width: 50%; 
 }
 
 #back {
     text-align: center; 
+}
+
+#main {
+    margin-bottom: 40px; 
 }
 
 section {
@@ -78,4 +87,19 @@ section {
 .link {
     grid-column: 2; 
     grid-row: 3;
+}
+
+#footer-text {
+    color: white; 
+    background-color: black;
+    padding: 10px;
+    margin: 0px; 
+    display:flex; 
+    justify-content: center; 
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:25px;
+    width:100%;
+ 
 }
